@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace HospitalManagemetSystem
 {
-	/// <summary>
-	/// Interaction logic for NormalUserWindow.xaml
-	/// </summary>
 	public partial class NormalUserWindow : Window
 	{
 		private void Border_Mousedown(object sender, MouseButtonEventArgs e)
@@ -52,6 +49,12 @@ namespace HospitalManagemetSystem
 		{
 			DataContext = new NormalUserWindowVM();
 			InitializeComponent();
+		}
+
+		private void AddMemberButton_Click(object sender, RoutedEventArgs e)
+		{
+			var window = new AddPatientWindow(); 
+			window.Show();
 		}
 	}
 }

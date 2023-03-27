@@ -11,6 +11,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Themes/LoginTheme.xaml"/>
                 <ResourceDictionary Source="Themes/DashboardTheme.xaml"/>
+                <ResourceDictionary Source="Themes/AddPatientTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
             <DataTemplate DataType="{x:Type vm:UserDashboardVM}">

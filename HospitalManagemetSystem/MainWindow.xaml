@@ -10,6 +10,7 @@
         mc:Ignorable="d"
         Title="Login" Height="450" Width="380"
         AllowsTransparency="True" Background="Transparent"
+        WindowStartupLocation="CenterScreen" 
         WindowStyle="None" ResizeMode="NoResize"
         >
     <Window.DataContext>

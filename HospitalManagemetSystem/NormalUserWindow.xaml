@@ -60,42 +60,41 @@
 
                         <!--Menu Buttons-->
                         <StackPanel DockPanel.Dock="Top">
-                            <Button Style="{StaticResource menuButton}">
+                            <Button Style="{StaticResource menuButton}" Command="{Binding UserDashboardViewCommand}">
                                 <StackPanel Orientation="Horizontal">
                                     <icon:PackIconMaterial Kind="Home" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Dashboard"/>
                                 </StackPanel>
                             </Button>
 
-                            <Button Style="{StaticResource menuButton}">
+                            <Button Style="{StaticResource menuButton}" Command="{Binding UserPatientsViewCommand}">
                                 <StackPanel Orientation="Horizontal">
                                     <icon:PackIconMaterial Kind="AccountMultiple" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Patients"/>
                                 </StackPanel>
                             </Button>
 
-                            <Button Style="{StaticResource menuButton}" Foreground="#ffffff">
+                            <Button Style="{StaticResource menuButton}" Foreground="#ffffff" Command="{Binding UserAppointmentsViewCommand}">
                                 <StackPanel Orientation="Horizontal">
                                     <icon:PackIconMaterial Kind="CalendarClock" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Appointments"/>
                                 </StackPanel>
                             </Button>
-                            
-                            <Button Style="{StaticResource menuButton}">
+
+                            <Button Style="{StaticResource menuButton}" Command="{Binding UserPrescriptionsViewCommand}">
                                 <StackPanel Orientation="Horizontal">
                                     <icon:PackIconMaterial Kind="Prescription" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Prescriptions"/>
                                 </StackPanel>
                             </Button>
 
-                            <Button Style="{StaticResource menuButton}">
+                            <Button Style="{StaticResource menuButton}" Command="{Binding UserBillingViewCommand}">
                                 <StackPanel Orientation="Horizontal">
                                     <icon:PackIconMaterial Kind="CashMultiple" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Billing"/>
                                 </StackPanel>
                             </Button>
 
-                            
                         </StackPanel>
 
                         <Button Style="{StaticResource menuButton}" VerticalAlignment="Bottom" 
@@ -147,7 +146,7 @@
                 </TextBlock>
 
                 <!--Add Button-->
-                <Button Style="{StaticResource addButton}">
+                <Button Style="{StaticResource addButton}" Click="AddMemberButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <icon:PackIconMaterial Kind="Plus" VerticalAlignment="Center" Width="11" Margin="0 1 8 0" Height="11"/>
                         <TextBlock Text="Add New Member"/>
