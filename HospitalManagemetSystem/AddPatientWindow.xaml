@@ -49,7 +49,7 @@
         </Style>
 
     </Window.Resources>
-    
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="350"/>
@@ -96,6 +96,8 @@
                         <RowDefinition Height="auto"/>
                         <RowDefinition Height="auto"/>
                         <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
 
                     <TextBlock Grid.Row="0" Text="Fulll Name" Style="{StaticResource text}"/>
@@ -106,11 +108,21 @@
                     <TextBlock Grid.Row="5" Text="Blood Group" Style="{StaticResource text}"/>
                     <TextBlock Grid.Row="6" Text="Address" Style="{StaticResource text}"/>
 
+
+                    <TextBlock Grid.Row="7" Text="Weight (kg)" Style="{StaticResource text}"/>
+                    <uc:MyTextBox Grid.Column="1" Grid.Row="7" Hint="60"/>
+
+                    <TextBlock Grid.Row="8" Text="Height (kg)" Style="{StaticResource text}"/>
+                    <uc:MyTextBox Grid.Column="1" Grid.Row="7" Hint="60"/>
+
+
                     <uc:MyTextBox Grid.Column="1" Grid.Row="0" Hint="Pasan Kavi"/>
                     <uc:MyTextBox Grid.Column="1" Grid.Row="1" Hint="pasankavi@gmail.com"/>
                     <DatePicker Grid.Column="1" Grid.Row="2" Style="{StaticResource datePicker}"/>
                     <uc:MyTextBox Grid.Column="1" Grid.Row="4" Hint="0123511231"/>
                     <uc:MyTextBox Grid.Column="1" Grid.Row="6" Hint="No 69, Temple road, Piliyandala"/>
+                    <uc:MyTextBox Grid.Column="1" Grid.Row="7" Hint="60"/>
+                    <uc:MyTextBox Grid.Column="1" Grid.Row="8" Hint="123"/>
 
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3" Margin="0 10">
                         <uc:MyOption Icon="Male" Text="Male"/>
